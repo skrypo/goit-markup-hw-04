@@ -87,11 +87,11 @@ button {
 }
 
 .menu-link:first-child {
-  margin-right: 57px;
+  margin-right: 50px;
 }
 
 .menu-link:nth-child(2) {
-  margin-right: 69px;
+  margin-right: 50px;
 }
 
 .header-logo {
@@ -189,8 +189,7 @@ button {
     ),
     url("../images/bg-img.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -242,6 +241,16 @@ button {
   display: none;
 }
 
+.feature-icons-wrapper {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--bgrnd-team);
+  margin-bottom: 30px;
+}
+
 .feature-item {
   width: 270px;
 }
@@ -270,6 +279,7 @@ button {
 
 .gallery-wrapper {
   width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -290,14 +300,6 @@ button {
 .gallery-list {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
-}
-
-.feature-icons-wrapper {
-  padding: 25px 100px;
-  border-radius: 4px;
-  background-color: var(--bgrnd-team);
-  margin-bottom: 30px;
 }
 
 /* -------Team Section------ */
@@ -370,7 +372,7 @@ button {
 }
 
 .team-icon-link:hover,
-.team-iconlink:focus {
+.team-icon-link:focus {
   background-color: var(--btn-color);
   color: var(--bgrnd-color);
 }
@@ -403,6 +405,7 @@ button {
   border-radius: 4px;
   color: var(--icon-color);
   border: 1px solid var(--icon-color);
+  outline: transparent;
 }
 
 .companies-icon {
@@ -430,6 +433,7 @@ button {
 .footer-wrapper {
   display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -511,6 +515,7 @@ button {
   background-color: var(--bgrnd-team);
   border: none;
   border-radius: 4px;
+  outline: transparent;
 }
 
 .filter-btn:hover {
@@ -538,6 +543,7 @@ button {
 .portfolio-item {
   width: calc((100% - 60px) / 3);
   background: var(--bgrnd-color);
+  outline: transparent;
 }
 
 .portfolio-item-name {
@@ -568,10 +574,12 @@ button {
 .portfolio-card {
   text-decoration: none;
   color: inherit;
+  display: block;
+  outline: transparent;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-card:hover,
+.portfolio-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
